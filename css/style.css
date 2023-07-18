@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    transition: all .2s;
+
+    scroll-behavior: smooth;
+}
+
+body {}
+
+p {
+    padding: 5px 0;
+}
+
+
+/* Layout */
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding: 5px;
+
+    z-index: 2;
+}
+
+.col {
+    padding: 5px;
+}
+
+.col-1 {
+    width: calc(25% - 10px);
+}
+
+.col-2 {
+    width: calc(50% - 10px);
+}
+
+.col-3 {
+    width: calc(75% - 10px);
+}
+
+.col-4 {
+    width: calc(100% - 10px);
+}
+
+/* Alinhamentos */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Componentes */
+.vertical-line {
+    border-left: #D2B004 solid 3px;
+
+}
+
+.vertical-line-dark {
+    border-left: #ffffff solid 3px;
+
+}
+
+.titulo {
+    width: auto;
+    border-bottom: #D2B004 solid 3px;
+
+}
+
+.titulo-dark {
+    width: auto;
+    border-bottom: #ffffff solid 3px;
+
+}
+
+.nav-menu {
+    padding: 15px 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    padding: 2px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    color: #161616;
+}
+
+.nav-menu ul li a:hover {
+    border-radius: 2px;
+    border-bottom: #ffffff 3px solid;
+
+    background-color: #1616162f;
+}
+
+#header {
+    height: 50px;
+
+    align-items: center;
+
+    color: #161616;
+}
+
+#header__background {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 55%;
+
+    z-index: 1;
+}
+
+#header__logo {
+    width: 350px;
+}
+
+#header__avatar {
+    position: absolute;
+    right: 0px;
+    top: 46px;
+
+    width: 44%;
+
+    z-index: 1;
+}
+
+
+#section-1 {
+    min-height: calc(100vh - 50px);
+
+    align-items: center;
+
+    background-color: #ffffff;
+    color: #161616;
+}
+
+/* Projetos */
+.projeto {
+    padding: 50px 0;
+}
+
+.projeto__vetor {}
+
+.projeto__vetor-left {
+    background: url('../assets/background-2.png') no-repeat;
+    background-size: contain;
+    background-position: -150px;
+}
+
+.projeto__vetor-right {
+    background: url('../assets/background-4.png') no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.projeto input {
+    width: 150px;
+    padding: 15px;
+    margin-right: 15px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #D2B004;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.projeto input:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+#projetos {
+    background-color: #ffffff;
+    color: #161616;
+}
+
+#projetos .titulo-2 {
+    margin-bottom: 50px;
+}
+
+#projetos .row {
+    align-items: center;
+}
+
+
+#projetos img {
+    width: 90%;
+    border-radius: 15px;
+
+    box-shadow: #161616 5px 3px 10px;
+}
+
+.projeto__imagem {}
+
+.projeto__imagem-row {
+    display: none;
+}
+
+
+
+/* Sobre */
+#section-3 {
+    background-color: #ffffff;
+    color: #161616;
+}
+
+#section-3 .carrossel {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+}
+
+#section-3 .carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+
+    width: 100%;
+}
+
+#section-3 .carrossel img {
+    object-fit: cover;
+
+    width: 100px;
+    height: 100px;
+
+    aspect-ratio: 1/1;
+}
+
+#section-3 #skills {}
+
+#section-3 #skills img {
+    width: 35px;
+    height: 35px;
+}
+
+#section-3__descricao img {
+    width: 100%;
+    position: relative;
+    left: -50px;
+    bottom: -13px;
+    transform: scaleX(-1);
+}
+
+#footer {
+    width: 100%;
+    background-color: #161616;
+    color: #ffffff;
+}
+
+#footer__logo {
+    position: relative;
+    width: 100%;
+}
+
+#footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer__menu a {
+    width: 100%;
+    background-color: #D2B004;
+    color: #ffffff;
+}
+
+
+/* Responsividade */
+
+@media (min-width: 320px) {}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
